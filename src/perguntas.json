@@ -1,10 +1,26 @@
 [
   {
-    "id": "q1",
-    "titulo": "Primeira pergunta",
-    "prompt": "Qual liguagem de programação usamos para desenvolvimento de aplicativos móveis?",
-    "resposta": ["Dart"],
+    "id": "1",
+    "titulo": "Mobile",
+    "prompt": "Qual linguagem de programação usamos para desenvolvimento de aplicativos móveis?",
+    "resposta": "Dart",
+    "dica": "Utilizamos através do Flutter",
+    "icon": ""
+  },
+  {
+    "id": "2",
+    "titulo": "Verdadeiro ou Falso",
+    "prompt": "Na programação, uma variável é fundamental para armazenamento e manipulação de dados",
+    "resposta": ["Verdadeiro", "verdadeiro", "VERDADEIRO"],
+    "dica": "Podemos tornar o código mais eficiente e organizado",
+    "icon": ""
+  },
+  {
+    "id": "3",
+    "titulo": "Web",
+    "prompt": "Qual linguagem de marcação usamos para estrutar uma página web?",
+    "resposta": ["html", "HTML"],
     "dica": "Utilozamos através do Flutter",
     "icon": ""
-  }
+  },
 ]
