@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
-import questions from "../src/perguntas.json";
-import "./fases.css";
+import questions from "../src/data/questions.json";
+import "./fase.css";
 
 export default function Fases() {
   const [selecionada, setSelecionada] = useState(null);
@@ -43,16 +43,7 @@ export default function Fases() {
         <p className="q-subtitle">Toque no ícone para abrir a pergunta</p>
 
         <div className="progress">
-          <div
-            className="progresso-bar"
-            role="progressbar"
-            aria-valuemin={0}
-            aria-valuemax={100}
-            aria-valuenow={progresso.porcentagem}
-            aria-label={`Progresso: ${progresso.resolvida} de 
-            ${progresso.total} resolvidas`}
-            style={{ width: `${progresso.porcentagem}%` }}/>
-
+          <div className="progresso-bar" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={progresso.porcentagem} aria-label={`Progresso: ${progresso.resolvida} de ${progresso.total} resolvidas`} style={{ width: `${progresso.porcentagem}%` }}/>
           <span className="progress-label">
             {progresso.resolvida} /{progresso.total}
           </span>
