@@ -1,5 +1,5 @@
-import Mapa from "./mapa";
-import "./mapa.css";
+import Mapa from "./map";
+import "./map.css";
 
 export default function App() {
   return (

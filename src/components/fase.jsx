@@ -18,8 +18,8 @@ export default function Fases() {
       next.add(id);
       return next;
     });
-    const idx = QUESTOES.findIndex((q) => q.id === id);
-    if (idx > -1 && idx < QUESTOES.length - 1) {
+    const idx = questions.findIndex((q) => q.id === id);
+    if (idx > -1 && idx < questions.length - 1) {
       setTrancada((prev) => Math.max(prev, idx + 1));
     }
   };
@@ -43,7 +43,10 @@ export default function Fases() {
         <p className="q-subtitle">Toque no ícone para abrir a pergunta</p>
 
         <div className="progress">
-          <div className="progresso-bar" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={progresso.porcentagem} aria-label={`Progresso: ${progresso.resolvida} de ${progresso.total} resolvidas`} style={{ width: `${progresso.porcentagem}%` }}/>
+          <div className="progresso-bar" role="progressbar" aria-valuemin={0} aria-valuemax={100}
+                                       aria-valuenow={progresso.porcentagem}
+                                       aria-label={`Progresso: ${progresso.resolvida} de ${progresso.total} resolvidas`} 
+                                       style={{ width: `${progresso.porcentagem}%` }}/>
           <span className="progress-label">
             {progresso.resolvida} /{progresso.total}
           </span>
