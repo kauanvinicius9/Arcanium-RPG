@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import questions from "../data/questions.json";
 import "./fase.css";
 import IconGrid from "./iconGrid";
+import QuestionDialog from "./QuestionDialog";
 
 export default function Fases() {
   const [selecionada, setSelecionada] = useState(null);
@@ -61,6 +62,16 @@ export default function Fases() {
         trancada = {trancada}
         resolvidas = {resolvidas}
       />
+
+      {selecionada && (
+        <QuestionDialog
+            questoes={selecionada}
+            index={questions.findIndex((q) => q.id === selecionada.id)}
+            total={total}
+            onClose={handleClose}
+            onCorrect={handleCorrect}
+          />
+      )}
     </main>
   );
 }
